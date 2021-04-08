@@ -1,7 +1,7 @@
 body {
     background-color: gray;
 }
-#mySection {
+.card {
     background-color: lightcyan;
     height: 300px;
     width: 500px;
