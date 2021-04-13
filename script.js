@@ -27,5 +27,13 @@ Person.prototype.render = function() {
     card.appendChild(nickNameP);
     mainSection.appendChild(card);
 };
-let kitten = new Person('Kiteen', 50, 'mewmewmew@mewmewmew.artime', 'Kitten LaRue');
+let kitten = new Person('Kitten', 50, 'mewmewmew@mewmewmew.artime', 'Kitten LaRue');
 kitten.render();
+
+let createButton = document.getElementById('create');
+
+createButton.addEventListener('click', consoleMyStuff)
+
+function consoleMySutff() {
+console.log('Create person button was clicked.');
+}

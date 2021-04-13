@@ -13,3 +13,16 @@ body {
 h1 {
     text-align: center;
 }
+
+#input {
+    background-color: aquamarine;
+    border: 1px black solid;
+    height: 120px;
+    width: 300px;
+    border-radius: 5px;
+    padding-top: 25px;
+    padding-left: 10px;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
