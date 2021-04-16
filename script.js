@@ -27,17 +27,18 @@ Person.prototype.render = function() {
     card.appendChild(nickNameP);
     mainSection.appendChild(card);
 };
-/*let kitten = new Person('Kitten', 50, 'mewmewmew@mewmewmew.artime', 'Kitten LaRue');
+/*let kitten = new Person('Kitten', 30, 'mewmewmew@mewmewmew.artime', 'Kitten LaRue');
 kitten.render();*/
 
 let createButton = document.getElementById('create');
 
-createButton.addEventListener('click', consoleMyStuff)
+createButton.addEventListener('click', createPerson)
 
-function consoleMySutff() {
-    new Person(document.getElementById("name").value, 
+function createPerson() {
+    let person = new Person(document.getElementById("name").value, 
     document.getElementById("age").value, 
     document.getElementById("email").value,
     document.getElementById("nickname").value,
     );
+    person.render();
 }
